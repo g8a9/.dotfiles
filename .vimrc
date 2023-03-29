@@ -102,3 +102,12 @@ if !has('nvim')
 endif
 
 let g:python3_host_prog = '/Users/giuseppe/miniconda3/bin/python'
+
+" Relative line numbers
+:set number
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
