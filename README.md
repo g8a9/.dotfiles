@@ -20,4 +20,5 @@ Follow instructions [here](https://docs.anaconda.com/free/miniconda/index.html)
 
 ## Vim
 
-- install [vim-plug](https://github.com/junegunn/vim-plug)
+1. install [vim-plug](https://github.com/junegunn/vim-plug)
+2. run :PlugInstall in vim
