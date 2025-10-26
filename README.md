@@ -1,4 +1,10 @@
+# Getting Started
+
 Steps to take to get to a setup I reasonably like.
+
+## Install ohmyzsh
+
+Follow instructions [here](https://github.com/ohmyzsh/ohmyzsh)
 
 ## ZSH Setup
 
@@ -8,11 +14,9 @@ Clone the repo, then:
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.aliases .aliases
 ln -s .dotfiles/.vimrc .vimrc
+ln -s .dotfiles/.tmux.conf .tmux.conf
 ```
 
-## Install ohmyzsh
-
-Follow instructions [here](https://github.com/ohmyzsh/ohmyzsh)
 
 ## Install miniconda
 
