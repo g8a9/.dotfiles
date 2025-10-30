@@ -24,5 +24,9 @@ Follow instructions [here](https://docs.anaconda.com/free/miniconda/index.html)
 
 ## Vim
 
-1. install [vim-plug](https://github.com/junegunn/vim-plug)
+1. install [vim-plug](https://github.com/junegunn/vim-plug). Check on their repo more most updated info, but this used to work:
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 2. run :PlugInstall in vim
