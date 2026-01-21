@@ -2,7 +2,18 @@
 
 alias psq="psqueue --Format=JobId,Username,QOS,tres-per-job,tres-per-node,State,mem-per-tres,ArrayJobID,ArrayTaskID,ReasonList:128"
 
-alias tmux="TERM=screen-256color-bce tmux"
+alias zshconfig="vim ~/.zshrc"                                                                                                                                                                                                           
+alias ohmyzsh="vim ~/.oh-my-zsh"                                                        
+alias clr="clear"                                                                       
+alias ll="ls -l"                                                                        
+alias la="ls -la"                                                                       
+alias lrt="ls -lrt"                                                                     
+alias v="vim"                                                                           
+alias vf="vifm"                                                                         
+alias vim="vim"                                                                         
+alias dus="du -hc -d1"   
+
+# alias tmux="TERM=screen-256color-bce tmux"
 
 qos() {
     echo "| name | priority | max jobs | max gpus | max time |"
