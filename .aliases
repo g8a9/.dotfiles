@@ -1,6 +1,19 @@
 #!/usr/bin/env bash
 
+alias psq="psqueue --Format=JobId,Username,QOS,tres-per-job,tres-per-node,State,mem-per-tres,ArrayJobID,ArrayTaskID,ReasonList:128"
+
 alias tmux="TERM=screen-256color-bce tmux"
+
+qos() {
+    echo "| name | priority | max jobs | max gpus | max time |"
+    echo "|--|--|--|--|--|"
+    echo "| gpu-debug | 10 | 1 | 8 | 01:00:00 |"
+    echo "| gpu-short | 10 | 2 | 4 | 04:00:00 |"
+    echo "| gpu-medium | 5 | 2 | 4 | 48:00:00 |"
+    echo "| gpu-long | 2 | 2 | 2 | 168:00:00 |"
+    echo "| gpu-hero | 100 | 8 | 8 | ∞ |"
+}
+qos
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."

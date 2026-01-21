@@ -1,4 +1,10 @@
+# Getting Started
+
 Steps to take to get to a setup I reasonably like.
+
+## Install ohmyzsh
+
+Follow instructions [here](https://github.com/ohmyzsh/ohmyzsh)
 
 ## ZSH Setup
 
@@ -8,11 +14,9 @@ Clone the repo, then:
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.aliases .aliases
 ln -s .dotfiles/.vimrc .vimrc
+ln -s .dotfiles/.tmux.conf .tmux.conf
 ```
 
-## Install ohmyzsh
-
-Follow instructions [here](https://github.com/ohmyzsh/ohmyzsh)
 
 ## Install miniconda
 
@@ -20,5 +24,9 @@ Follow instructions [here](https://docs.anaconda.com/free/miniconda/index.html)
 
 ## Vim
 
-1. install [vim-plug](https://github.com/junegunn/vim-plug)
+1. install [vim-plug](https://github.com/junegunn/vim-plug). Check on their repo more most updated info, but this used to work:
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 2. run :PlugInstall in vim
